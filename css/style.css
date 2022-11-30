@@ -16,7 +16,7 @@ body{
 }
 .top-kanan{
     position: absolute;
-    top: -2px;
+    top: -5px;
     right: 12%;
 }
 .top-acc{
@@ -57,7 +57,120 @@ body{
         transform:rotate(360deg);
     }
 }
-.menu{
+.menu-bg{
     top: 119%;
     position: absolute;
+}
+.menu-opt{
+    position: absolute;
+}
+.kare{
+    bottom: 50px;
+    left: 100px;
+    position: absolute;
+}
+.ushi{
+    bottom: 65px;
+    left: 365px;
+    position: absolute;
+}
+.hitsume{
+    bottom: 50px;
+    left: 630px;
+    position: absolute;
+}
+#bg-kare{
+    position: absolute;
+    top: 182%;
+    left: 10.8%;
+}
+.txt-kare p{
+    position: absolute;
+    font-family: 'Noto Serif JP', serif;
+    margin: auto;
+    bottom: 10%;
+    left: 45%;
+    font-size: 22px;
+    line-height: 2;
+}
+#bg-ushi{
+    position: absolute;
+    top: 293.4%;
+    left: 10.8%;
+}
+.txt-ushi {
+    position: absolute;
+    font-family: 'Noto Serif JP', serif;
+    margin: auto;
+    top: 37%;
+    left: 45%;
+    font-size: 22px;
+    line-height: 2;
+}
+.glass{
+    position: absolute;
+    width: 500px;
+    height: 380px;
+    top: calc(50% - 100px);
+    left: calc(50% - 65px);
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(1.5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.37);
+}
+.glass-1{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    top: calc(50% - 100px);
+    left: calc(50% - 65px);
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.glass-1{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(1.5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.37);
+}
+#bg-hitsuma{
+    position: absolute;
+    top: 394.5%;
+    left: 10.8%;
+}
+.txt-hitsuma p{
+    position: absolute;
+    font-family: 'Noto Serif JP', serif;
+    margin: auto;
+    top: 37%;
+    left: 45%;
+    font-size: 22px;
+    line-height: 2;
+}
+#coupon{
+    position: absolute;
+    top: 504%;
+    right: 10.8%;
+}
+.kupon img{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+.access{
+    position: absolute;
+    top: 601%;
+    left: 10.8%
+}
+.access h3{
+    position: absolute;
+    
 }
