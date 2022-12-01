@@ -6,9 +6,10 @@
 }
 body{
     font-family: 'Noto Serif JP', serif;
+    max-width: 990px;
 }
 #header{
-    max-width: 990px;
+    
 }
 .top-acc{
     position: absolute;
@@ -74,6 +75,9 @@ body{
     left: 365px;
     position: absolute;
 }
+.ushi:hover{
+    opacity: 70%;
+}
 .hitsume{
     bottom: 50px;
     left: 630px;
@@ -92,6 +96,15 @@ body{
     left: 45%;
     font-size: 22px;
     line-height: 2;
+}
+.kare:hover{
+    opacity: 70%;
+}
+.hitsume:hover{
+    opacity: 70%;
+}
+.kupon:hover{
+    opacity: 70%;
 }
 #bg-ushi{
     position: absolute;
@@ -242,5 +255,55 @@ body{
     }
     to {
         transform:rotate(360deg);
+    }
+}
+.anim span{
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    margin: -280px 40px 54px  -34px;
+    background:url("/Ozora-resto/img/flower.png");
+    animation: anim 10s infinite  linear;
+}
+.anim span:nth-child(7h) {
+    animation-delay: 2.5s;
+}
+.anim span:nth-child(7n-1) {
+    animation-delay: 1.0s;
+}
+.anim span:nth-child(7n-2) {
+    animation-delay: 3.5s;
+}
+.anim span:nth-child(7n-3) {
+    animation-delay: 5.0s;
+}
+.anim span:nth-child(7n-4) {
+    animation-delay: 1.5s;
+}
+.anim span:nth-child(7n-5) {
+    animation-delay: 7.0s;
+}
+.anim span:nth-child(7n-6) {
+    animation-delay: 9.5s;shutdo
+}
+
+@keyframes anim{
+    0% {
+        width: 75px;
+        height: 75px;
+        opacity: 1;                    
+        transform: translate(0, 0px) rotateZ(0deg);
+    }
+    75% {
+        width: 75px;
+        height: 75px;
+        opacity: 1;
+        transform: translate(100px, 900px) rotateZ(270deg); 
+    }
+    100% {
+        width: 75px;
+        height: 75px;
+        opacity: 0;                   
+        transform: translate(150px, 900px) rotateZ(360deg);
     }
 }
