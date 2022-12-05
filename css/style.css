@@ -1,21 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
 *{
-    padding: auto;
-    margin: auto;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
 body{
     font-family: 'Noto Serif JP', serif;
     max-width: 990px;
+    margin: 0px auto;
 }
+
+#background{
+    background-image: url(../img/hdh.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 990px;
+    height: 4000px;
+}
+.judul{
+    position: relative;
+    padding-top: 70px;
+    padding-left: 7px;
+}
+
+.banner img {
+    width: 200px;
+}
+.ramen{
+    padding-bottom: 2000px;
+    margin-left: 63%;
+    position: absolute;
+}
+.karedok{
+    margin-top: 50px;
+    margin-left: 390px;
+}
+.hitsu{
+    margin-bottom: 2000px;
+    margin-left: 180px;
+    z-index: 1;
+    position: absolute;
+}
+.tombol{
+    margin-bottom: 160px;
+    left: 630px;
+    position: absolute
+}
+.sliding{
+    position: absolute;
+    left: 600px;
+}
+
 .top-acc{
     position: absolute;
-    top: -2px;
+    top: 2px;
 }
 .top-kanan{
     position: absolute;
-    top: -5px;
-    right: 12%;
+    top: 2px;
+    right: 24%;
 }
 .top-acc{
     animation-name: spin;
@@ -56,19 +101,19 @@ body{
     }
 }
 .menu-bg{
-    top: 119%;
     position: absolute;
+    top: 81%;
 }
 .menu-opt{
     position: absolute;
 }
 .kare{
-    bottom: 50px;
+    bottom: -290px;
     left: 100px;
     position: absolute;
 }
 .ushi{
-    bottom: 65px;
+    bottom: -275px;
     left: 365px;
     position: absolute;
 }
@@ -76,21 +121,16 @@ body{
     opacity: 70%;
 }
 .hitsume{
-    bottom: 50px;
+    bottom: -290px;
     left: 630px;
     position: absolute;
-}
-#bg-kare{
-    position: absolute;
-    top: 182%;
-    left: 10.8%;
 }
 .txt-kare p{
     position: absolute;
     font-family: 'Noto Serif JP', serif;
     margin: auto;
-    bottom: 10%;
-    left: 45%;
+    bottom: -77%;
+    left: 47%;
     font-size: 22px;
     line-height: 2;
 }
@@ -103,25 +143,22 @@ body{
 .kupon:hover{
     opacity: 70%;
 }
-#bg-ushi{
-    position: absolute;
-    top: 293.4%;
-    left: 10.8%;
-}
+
 .txt-ushi {
     position: absolute;
     font-family: 'Noto Serif JP', serif;
     margin: auto;
-    top: 37%;
-    left: 45%;
+    top: 210%;
+    left: 47%;
     font-size: 22px;
     line-height: 2;
+    z-index: 1;
 }
 .glass{
     position: absolute;
     width: 500px;
     height: 380px;
-    top: calc(50% - 100px);
+    top: calc(150% - 100px);
     left: calc(50% - 65px);
     background: inherit;
     border-radius: 2px;
@@ -138,7 +175,7 @@ body{
     position: absolute;
     width: 500px;
     height: 350px;
-    top: calc(50% - 100px);
+    top: calc(220% - 100px);
     left: calc(50% - 65px);
     background: inherit;
     border-radius: 2px;
@@ -151,53 +188,54 @@ body{
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.37);
 }
-#bg-hitsuma{
+.glass2{
     position: absolute;
-    top: 394.5%;
-    left: 10.8%;
+    width: 500px;
+    height: 385px;
+    top: calc(280% - 100px);
+    left: calc(50% - 65px);
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
 }
-.txt-hitsuma p{
+.glass2{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(1.5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.37);
+}
+#txt-hitsuma p{
     position: absolute;
     font-family: 'Noto Serif JP', serif;
     margin: auto;
-    top: 37%;
-    left: 45%;
+    top: 270%;
+    left: 47%;
     font-size: 22px;
     line-height: 2;
 }
 #coupon{
     position: absolute;
-    top: 504%;
-    right: 10.8%;
+    top: 350%;
+    left: 500px;
+    z-index: 1;
 }
-.kupon img{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-}
-.access{
-    position: absolute;
-    top: 601%;
-    left: 10.8%
-}
-.line{
-    background-color: rgb(102, 0, 48);
-    position: absolute;
-    height: 3px;
-    width: 121px;
-    top: 18%;
-    left: 7.5%;
-}
-.access p{
+.access h1{
     position: absolute;
     font-family: 'Noto Serif JP', serif;
     margin: auto;
-    top: 3%;
-    left: 8%;
+    top: 377%;
+    left: 498px;
     font-size: 22px;
     line-height: 2;
     font-size: 30px;
     font-style: bold;
+    z-index: 1;
+}
+
+.line{
+    top: 319%;
+    position: absolute;
 }
 .btm-acc{
     position: absolute;
@@ -237,11 +275,21 @@ body{
    /* transform: rotate(3grad); */ 
    /* transform: rotate(.03turn);  */
 }
+.coupon{
+    opacity: 30;
+}
+.akses{
+    margin-top: 3230px;
+    font-size: 21px;
+    z-index: 10;
+    position: absolute;
+    margin-left: 90px;
+}
 .glass-btm{
     position: absolute;
     width: 860px;
     height: 250px;
-    top: calc(50% - 100px);
+    top: calc(395% - 100px);
     left: calc(50% - 430px);
     background: inherit;
     border-radius: 2px;
@@ -262,15 +310,16 @@ body{
         transform:rotate(360deg);
     }
 }
+.page{
+    margin-top: -90%;
+}
 .anim span{
-    top: 80%;
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    margin: -280px 40px 54px -34px;
-    background:url("/Ozora-resto/img/bu.png");
+    height: 30px;
+    width: 75px;
+    margin: -150px 40px 54px  -34px;
+    background:url("/img/bu.png");
     animation: anim 10s infinite  linear;
-
 }
 .anim span:nth-child(7h) {
     animation-delay: 2.5s;
@@ -291,7 +340,7 @@ body{
     animation-delay: 7.0s;
 }
 .anim span:nth-child(7n-6) {
-    animation-delay: 9.5s;shutdo
+    animation-delay: 9.5s;
 }
 
 @keyframes anim{
