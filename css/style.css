@@ -275,7 +275,7 @@ body{
    /* transform: rotate(3grad); */ 
    /* transform: rotate(.03turn);  */
 }
-.coupon{
+.coupon:hover{
     opacity: 30;
 }
 .akses{
